@@ -9,12 +9,8 @@ public class MainActivity extends BridgeActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        // این خط باعث می‌شود سیستم‌عامل اندروید اجازه اسکرین‌شات 
-        // و ضبط صفحه (Screen Record) را به هیچ اپلیکیشنی ندهد.
-        // همچنین در لیست Recent Apps محتوای برنامه شما سیاه دیده می‌شود.
-        getWindow().setFlags(
-            WindowManager.LayoutParams.FLAG_SECURE, 
-            WindowManager.LayoutParams.FLAG_SECURE
-        );
+        // شرط ۱: جلوگیری از اسکرین‌شات و ضبط صفحه (Screen Recording)
+        // این کد باعث می‌شود در لیست برنامه‌های اخیر (Recent Apps) هم صفحه سیاه نشان داده شود
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
     }
 }
