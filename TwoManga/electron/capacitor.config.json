@@ -1,0 +1,15 @@
+{
+  "appId": "com.saino.TwoManga",
+  "appName": "TwoManga",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "https://mangadream.click",
+    "allowNavigation": ["MANGADREAM.CLICK"]
+  },
+  "plugins": {
+    "PrivacyScreen": {
+      "enable": true
+    }
+  }
+}
